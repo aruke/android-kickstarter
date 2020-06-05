@@ -1,3 +1,4 @@
+include ':db'
 include ':app'
 include ':data'
 include ':firebase'
