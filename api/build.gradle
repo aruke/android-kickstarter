@@ -6,4 +6,14 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    // REST APIs
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+
+    // Retrofit Converters
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-simplexml:2.7.1'
+
+    // Mock Web Server, for testing
+    implementation 'com.squareup.retrofit2:retrofit-mock:2.6.2'
 }
