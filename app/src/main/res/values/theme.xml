@@ -3,6 +3,10 @@
 
     <style name="AppTheme.DayNight" parent="Base.AppTheme" />
 
+    <style name="AppTheme.Launch" parent="Base.AppTheme">
+        <item name="android:windowBackground">@drawable/window_background_launch</item>
+    </style>
+
     <!-- Base Theme: Shared between Light and Dark modes -->
     <style name="Base.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
