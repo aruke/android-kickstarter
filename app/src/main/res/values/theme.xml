@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.DayNight" parent="Base.AppTheme" />
+
+    <!-- Base Theme: Shared between Light and Dark modes -->
+    <style name="Base.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--Material color attributes -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorError">@color/color_error</item>
+
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorOnError">@color/color_on_error</item>
+
+        <!-- Map legacy AppCompat attributes to MaterialComponent attributes -->
+        <item name="colorPrimaryDark">?colorPrimaryVariant</item>
+        <item name="colorAccent">?colorSecondary</item>
+
+        <!-- Widow Look & Feel -->
+        <item name="android:statusBarColor">?colorSurface</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">
+            ?colorControlHighlight
+        </item>
+
+        <!-- Add Custom Font here -->
+        <!--<item name="fontFamily">@font/roboto</item>-->
+
+        <!--Material typography attributes-->
+
+        <item name="textAppearanceHeadline1">@style/Typography.AppTheme.H1</item>
+        <item name="textAppearanceHeadline2">@style/Typography.AppTheme.H2</item>
+        <item name="textAppearanceHeadline3">@style/Typography.AppTheme.H3</item>
+        <item name="textAppearanceHeadline4">@style/Typography.AppTheme.H4</item>
+        <item name="textAppearanceHeadline5">@style/Typography.AppTheme.H5</item>
+        <item name="textAppearanceHeadline6">@style/Typography.AppTheme.H6</item>
+        <item name="textAppearanceSubtitle1">@style/Typography.AppTheme.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/Typography.AppTheme.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/Typography.AppTheme.Body1</item>
+        <item name="textAppearanceBody2">@style/Typography.AppTheme.Body2</item>
+        <item name="textAppearanceButton">@style/Typography.AppTheme.Button</item>
+        <item name="textAppearanceCaption">@style/Typography.AppTheme.Caption</item>
+        <item name="textAppearanceOverline">@style/Typography.AppTheme.Overline</item>
+
+        <!--Material shape attributes-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.AppTheme.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.AppTheme.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.AppTheme.Large</item>
+
+        <!--Component styles-->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert
+        </item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.AppTheme.BottomSheetDialog</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.Surface</item>
+        <item name="materialButtonStyle">@style/Widget.AppTheme.Button</item>
+        <item name="textInputStyle">@style/Widget.AppTheme.TextInputLayout</item>
+    </style>
+
+</resources>

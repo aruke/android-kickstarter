@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- chips, buttons, text fields and FABs -->
+    <style name="ShapeAppearance.AppTheme.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- cards, alert dialogs -->
+    <style name="ShapeAppearance.AppTheme.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <!-- side and bottom navigation drawers -->
+    <style name="ShapeAppearance.AppTheme.Large" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+    </style>
+</resources>

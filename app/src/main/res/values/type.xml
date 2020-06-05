@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Typography-->
+
+    <style name="Typography.AppTheme.H1" parent="TextAppearance.MaterialComponents.Headline1" />
+
+    <style name="Typography.AppTheme.H2" parent="TextAppearance.MaterialComponents.Headline2" />
+
+    <style name="Typography.AppTheme.H3" parent="TextAppearance.MaterialComponents.Headline3" />
+
+    <style name="Typography.AppTheme.H4" parent="TextAppearance.MaterialComponents.Headline4" />
+
+    <style name="Typography.AppTheme.H5" parent="TextAppearance.MaterialComponents.Headline5" />
+
+    <style name="Typography.AppTheme.H6" parent="TextAppearance.MaterialComponents.Headline6" />
+
+    <style name="Typography.AppTheme.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1" />
+
+    <style name="Typography.AppTheme.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2" />
+
+    <style name="Typography.AppTheme.Body1" parent="TextAppearance.MaterialComponents.Body1" />
+
+    <style name="Typography.AppTheme.Body2" parent="TextAppearance.MaterialComponents.Body2" />
+
+    <style name="Typography.AppTheme.Button" parent="TextAppearance.MaterialComponents.Button" />
+
+    <style name="Typography.AppTheme.Caption" parent="TextAppearance.MaterialComponents.Caption" />
+
+    <style name="Typography.AppTheme.Overline" parent="TextAppearance.MaterialComponents.Overline" />
+
+</resources>
