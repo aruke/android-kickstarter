@@ -1,0 +1,77 @@
+android {
+    defaultConfig {
+        consumerProguardFiles "consumer-rules.pro"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    // Firebase Bill of Materials https://firebase.google.com/docs/android/setup#firebase-bom
+    implementation platform('com.google.firebase:firebase-bom:25.3.1')
+
+    // Analytics
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // App Indexing
+    implementation 'com.google.firebase:firebase-appindexing'
+
+    // Authentication
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    // Cloud Firestore
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+    // Cloud Functions for Firebase Client SDK
+    implementation 'com.google.firebase:firebase-functions-ktx'
+
+    // Cloud Messaging
+    implementation 'com.google.firebase:firebase-messaging'
+
+    // Cloud Storage
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+    // Crashlytics
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    // Dynamic Links
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx'
+
+    // In-App Messaging (Analytics required)
+    implementation 'com.google.firebase:firebase-inappmessaging-ktx'
+
+    // In-App Messaging Display	(Analytics required)
+    implementation 'com.google.firebase:firebase-inappmessaging-display-ktx'
+
+    // Performance Monitoring
+    implementation 'com.google.firebase:firebase-perf'
+
+    // Realtime Database
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    // Remote Config
+    implementation 'com.google.firebase:firebase-config-ktx'
+
+    // ML Kit: Vision APIs
+    implementation 'com.google.firebase:firebase-ml-vision'
+    // ML Kit: Image Labeling Model
+    implementation 'com.google.firebase:firebase-ml-vision-image-label-model'
+    // ML Kit: Object Detection and Tracking Model
+    implementation 'com.google.firebase:firebase-ml-vision-object-detection-model'
+    // ML Kit: Face Detection Model
+    implementation 'com.google.firebase:firebase-ml-vision-face-model'
+    // ML Kit: Barcode Scanning Model
+    implementation 'com.google.firebase:firebase-ml-vision-barcode-model'
+    // ML Kit: AutoML Vision Edge API
+    implementation 'com.google.firebase:firebase-ml-vision-automl'
+    // ML Kit: Natural Language APIs
+    implementation 'com.google.firebase:firebase-ml-natural-language'
+    // ML Kit: Language Identification Model
+    implementation 'com.google.firebase:firebase-ml-natural-language-language-id-model'
+    // ML Kit: Translate Model
+    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model'
+    // ML Kit: Smart Reply Model
+    implementation 'com.google.firebase:firebase-ml-natural-language-smart-reply-model'
+    // ML Kit: Custom Model APIs
+    implementation 'com.google.firebase:firebase-ml-model-interpreter'
+}
