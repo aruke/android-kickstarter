@@ -9,6 +9,8 @@ android {
             applicationIdSuffix '.debug'
         }
     }
+
+    buildFeatures.dataBinding true
 }
 
 dependencies {
