@@ -11,15 +11,15 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiModule {
 
-    operator fun invoke(baseApiUrl: String, isDebug: Boolean) = module {
+    operator fun invoke(baseApiUrl: String, enableHttpLogging: Boolean) = module {
         single {
-            apiService(baseApiUrl, isDebug)
+            apiService(baseApiUrl, enableHttpLogging)
         }
     }
 
     private fun apiService(
         apiUrl: String,
-        debug: Boolean
+        enableHttpLogging: Boolean
     ): ApiService {
         // Converter
         val jsonConverterFactory = GsonConverterFactory.create(
@@ -30,7 +30,7 @@ object ApiModule {
 
         // HTTP Client
         val okHttpClient = OkHttpClient.Builder()
-            .addInterceptor(LoggingInterceptor(debug))
+            .addInterceptor(LoggingInterceptor(enableHttpLogging))
             .addInterceptor(ErrorInterceptor())
             .build()
 
@@ -41,5 +41,4 @@ object ApiModule {
             .build()
             .create(ApiService::class.java)
     }
-
 }
